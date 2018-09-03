@@ -53,7 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Attack.cs" />
      <Compile Include="Assets\Scripts\DeleteShells.cs" />
+     <Compile Include="Assets\Scripts\MotionEnemy.cs" />
      <Compile Include="Assets\Scripts\MotionTest2D.cs" />
      <Compile Include="Assets\Scripts\Shooting.cs" />
  <Reference Include="UnityEditor.StandardEvents">

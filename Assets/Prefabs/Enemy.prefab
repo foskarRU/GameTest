@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4018723344137822}
   - component: {fileID: 212791326151850122}
   - component: {fileID: 50451122515551512}
-  - component: {fileID: 60446879173136420}
+  - component: {fileID: 61273666650040216}
+  - component: {fileID: 114454345770557200}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -62,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60446879173136420
-PolygonCollider2D:
+--- !u!61 &61273666650040216
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,7 +72,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -84,14 +85,21 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.08, y: 0.08}
-      - {x: -0.08, y: -0.08}
-      - {x: 0.074999996, y: -0.08}
-      - {x: 0.08, y: -0.06}
-      - {x: 0.08, y: 0.07}
-      - {x: 0.055, y: 0.08}
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1}
+  m_EdgeRadius: 0
+--- !u!114 &114454345770557200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950868479259382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0b93daa0b3ca24fbc0ed0e8a043ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increment: 0.05
 --- !u!212 &212791326151850122
 SpriteRenderer:
   m_ObjectHideFlags: 1

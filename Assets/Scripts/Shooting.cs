@@ -9,14 +9,13 @@ public class Shooting : MonoBehaviour {
     private float speed = 5f;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if ((timeFlag + pause) <= Time.time)
         {
-            Vector3 coor = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y, -8.5f);
+            Vector3 coor = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y, -9.1f);
             GameObject obj = Instantiate(shell, coor, Quaternion.identity);
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
             timeFlag = Time.time;

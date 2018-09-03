@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class DeleteShells : MonoBehaviour
 {
+    public GameObject shell;
 
-    // Use this for initialization
     void Start()
     {
-
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerStay2D(Collider2D col)
     {
-
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag=="Shell")
+        if (col.gameObject.tag=="Enemy")
         {
-            print("Destroied");
+            Destroy(shell);
         }
     }
 }
